@@ -1,0 +1,11 @@
+bin/*
+O.*
+/db/
+dbd/
+envPaths
+lib/*
+*.swp
+autosave/sav/
+autosave/req/info*.req
+info*.req
+*.local
