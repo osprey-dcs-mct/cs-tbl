@@ -97,14 +97,17 @@ record(bi, "$(P)$(Q)speed_alarm")
   field(DESC, "Alarm if speeds are different")
   field(ZNAM, "SAME")
   field(ONAM, "DIFFERENT")
-  field(OSV, "MAJOR")
+  field(OSV,  "MAJOR")
+  field(PINI, "YES")
 }
 
 record(dfanout, "$(P)$(Q)speed"){
   field(DESC, "Set speed to all motors")
   field(OMSL, "supervisory")
-  field(EGU, "mm/sec")
+  field(EGU,  "mm/sec")
   field(PREC, "3")
   field(OUTA, "$(P)$(M1).VELO")
   field(OUTB, "$(P)$(M2).VELO")
+
+  info(autosaveFields, "VAL")
 }
